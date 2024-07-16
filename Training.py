@@ -4,7 +4,6 @@ import torch.optim as optim
 import torch.nn.functional as F
 import torchvision.models as models
 from torch.utils.data import random_split
-
 import matplotlib.pyplot as plt
 import numpy as np
 import random
@@ -31,7 +30,8 @@ class ImageClassification(nn.Module):  # nn.Module is the base class for all neu
         return {'Validation Loss': loss.detach(), 'Validation Accuracy': acc}
 
     def validating_epoch_final(self, outputs):
-        batch_loss = [x['Validation Loss'] for x in outputs]  # This line extracts the validation loss for each batch of the validation data
+        batch_loss = [x['Validation Loss'] for x in outputs]  # This line extracts the validation loss for
+        # each batch of the validation data
         epoch_loss = torch.stack(batch_loss).mean()  # This line calculates the mean of the validation loss for all batches
         batch_accuracy = [x['Validation Accuracy'] for x in outputs]
         epoch_accuracy = torch.stack(batch_accuracy).mean()
@@ -49,7 +49,7 @@ class ResNet(ImageClassification):  # Defining the ResNet Model
         self.network = models.resnet50(weights="ResNet50_Weights.DEFAULT")
         features = self.network.fc.in_features
         self.network.fc = nn.Linear(features, len(garbage_classes))  # Replacing last layer with a linear layer of
-        # garbage classes with length 6
+        # garbage classes with length 13
 
     def forward(self, image):
         return torch.sigmoid(self.network(image))  # Using sigmoid activation function
@@ -82,7 +82,7 @@ def main():
     # Load the dataset and apply the transformations
     dataset = ImageFolder(directory, transform=transformations)
 
-    ## TESTING THE DATASETS BY RANDOMLY DISPLAYING IMAGES AND THEIR LABELS (REMOVE ''' FROM LINE 33 & 40 TO MAKE IT WORK!)
+    ## TESTING THE DATASETS BY RANDOMLY DISPLAYING IMAGES AND THEIR LABELS (REMOVE ''' FROM LINE 87 & 94 TO MAKE IT WORK!)
     # Permute the dimensions of the image to fit the format of the matplotlib
     '''def display_test(image, label):
         print("Label:", dataset.classes[label], "(Class No: " + str(label) + ")")
@@ -130,7 +130,6 @@ def main():
             return torch.device('cuda')
         else:
             return torch.device('cpu')
-
     device = get_default_device()
 
     # Move the model to GPU
@@ -156,7 +155,7 @@ def main():
             return len(self.data)
 
     device = get_default_device()
-    print(device)  # Note: If output is cuda, then GPU is available
+    print('Processing via:', device)  # Note: If output is cuda, then GPU is available
 
     train = DataLoad(train, device)
     validation = DataLoad(validation, device)
@@ -239,12 +238,14 @@ def main():
     print('Testing No.1 - Class:', dataset.classes[label], ', Predicted Class:', predict(img, model))
     plt.title('Testing No.1')
     plt.show()
+
     ### TESTING NO.2
     img, label = random.choice(dataset)
     plt.imshow(img.permute(1, 2, 0))  # Permuting the image to the format expected by matplotlib
     print('Testing No.2 - Class:', dataset.classes[label], ', Predicted Class:', predict(img, model))
     plt.title('Testing No.2')
     plt.show()
+
     ### TESTING NO.3
     img, label = random.choice(dataset)
     plt.imshow(img.permute(1, 2, 0))  # Permuting the image to the format expected by matplotlib
