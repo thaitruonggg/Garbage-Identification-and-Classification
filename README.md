@@ -4,7 +4,7 @@
 2. ***(Optional)*** For the pre-trained model, please download using the link below and paste it in the `models` folder (your directory should be ***models/enhanced_model_1.pth***). Link: https://bit.ly/SIC_models
 3. Run `Training.py`.
 4. Check models folder to see if `enhanced_model_1.pth` available or not.
-5. Run `Testing_Class.py` to check if the program classifies the garbage in the correct class (Using images / videos in external folder).
+5. Run `Testing_Class.py` to check if the program classifies garbage in the correct class (Using images / videos in external folder).
 6. Run `Execute_Images.py` to identify and classify garbage in images (Using images / videos in external folder).
 7. Run `Execute_Videos.py` to identify and classify garbage in videos or real-time webcam (Using images / videos in external folder).
 ## RESULT
