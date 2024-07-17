@@ -7,3 +7,7 @@
 5. Run `Testing_Class.py` to check if the program classifies the garbage in the correct class (Using images / videos in external folder).
 6. Run `Execute_Images.py` to identify and classify garbage in images (Using images / videos in external folder).
 7. Run `Execute_Videos.py` to identify and classify garbage in videos or real-time webcam (Using images / videos in external folder).
+## RESULT
+### Images
+![Screenshot 2024-07-17 093230](https://github.com/user-attachments/assets/e702785d-3a18-4050-9b86-00753e3a0e30)
+### Videos
