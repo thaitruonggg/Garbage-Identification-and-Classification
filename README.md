@@ -1,10 +1,8 @@
 # Garbage Identification and Classification
 ## INSTRUCTION
-1. Run `Training.py`
-2. Check models folder to see if `enhanced_model_1.pth` available or not
-3. Run `Testing_Class.py` to check if the program classifies the garbage in the correct class (Using images / videos in external folder).
-4. Run `Execute_Images.py` to identify and classify garbage in images (Using images / videos in external folder).
-5. Run `Execute_Videos.py` to identify and classify garbage in videos or real-time webcam (Using images / videos in external folder).
-## PENDING
-1. Images dataset
-2. Testing images and videos
+1. Due to Github limitation, please download the classes folder with the link below, then unzip it, copy and paste it into the all_classes folder (your directory should be all_classes/classes - Ex: all_classes/battery). Link: https://bit.ly/SIC_all_classes
+2. Run `Training.py`.
+3. Check models folder to see if `enhanced_model_1.pth` available or not.
+4. Run `Testing_Class.py` to check if the program classifies the garbage in the correct class (Using images / videos in external folder).
+5. Run `Execute_Images.py` to identify and classify garbage in images (Using images / videos in external folder).
+6. Run `Execute_Videos.py` to identify and classify garbage in videos or real-time webcam (Using images / videos in external folder).
