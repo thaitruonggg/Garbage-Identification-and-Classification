@@ -1,7 +1,7 @@
 # Garbage Identification and Classification
 ## INSTRUCTION
-1. Due to Github limitation, please download all the classes folders with the link below, then unzip, copy and paste it into the `all_classes` folder (your directory should be all_classes/classes - Ex: all_classes/battery). Link: https://bit.ly/SIC_all_classes
-2. ***(Optional)*** For the pre-trained model, please download using the link below and paste it in the `models` folder (your directory should be models/enhanced_model_1.pth). Link: https://bit.ly/SIC_models
+1. Due to Github limitation, please download all the classes folders with the link below, then unzip, copy and paste it into the `all_classes` folder (your directory should be ***all_classes/classes - Ex: all_classes/battery***). Link: https://bit.ly/SIC_all_classes
+2. ***(Optional)*** For the pre-trained model, please download using the link below and paste it in the `models` folder (your directory should be ***models/enhanced_model_1.pth***). Link: https://bit.ly/SIC_models
 3. Run `Training.py`.
 4. Check models folder to see if `enhanced_model_1.pth` available or not.
 5. Run `Testing_Class.py` to check if the program classifies the garbage in the correct class (Using images / videos in external folder).
