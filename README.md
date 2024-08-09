@@ -1,7 +1,7 @@
 # Garbage Identification and Classification
 ## LINK FOR KAGGLE NOTEBOOK TO TRAIN MODELS:
 - ResNet50: https://www.kaggle.com/code/naofunyannn/sic-resnet50
-- Swin Transformer:https://www.kaggle.com/code/naofunyannn/sic-swintransformer
+- Swin Transformer: https://www.kaggle.com/code/naofunyannn/sic-swintransformer
 ## PYTHON PACKAGES REQUIREMENT:
 - PyTorch (CUDA version is recommended)
 - Matplot
