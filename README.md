@@ -10,7 +10,7 @@
 ## INSTRUCTION
 ### If you train on your device, please start from here:
 1. Due to Github limitation, please download all the classes folders with the link below, then unzip, copy and paste it into the `all_classes` folder (your directory should be ***all_classes/classes - Ex: all_classes/battery***). Link: https://www.kaggle.com/datasets/naofunyannn/sicdataset/data
-2. Run `Training.py`.
+2. Run `Training_ResNet.py` or `Training_SwinTransformer.py`.
 3. Check `models` folder to see if `ResnetModel.pth` or `SwinTransformerModel.pth` available or not -> Then continue to step 5
 ### If you train your model using Kaggle, please continue from here:
 4. Copy your downloaded model into the `models` folders
