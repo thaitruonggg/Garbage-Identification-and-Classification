@@ -1,15 +1,16 @@
 # Garbage Identification and Classification
 ## LINK FOR KAGGLE NOTEBOOK TO TRAIN MODELS:
-- Resnet50: https://www.kaggle.com/code/naofunyannn/sic-resnet50
+- ResNet50: https://www.kaggle.com/code/naofunyannn/sic-resnet50
 - Swin Transformer:https://www.kaggle.com/code/naofunyannn/sic-swintransformer
-## INSTRUCTION
-1. Due to Github limitation, please download all the classes folders with the link below, then unzip, copy and paste it into the `all_classes` folder (your directory should be ***all_classes/classes - Ex: all_classes/battery***). Link: [https://bit.ly/SIC_all_classes](https://drive.google.com/drive/folders/1JNd50twyUlAJ8ly5LB3KxLqxGk2-FROn?usp=drive_link)
-2. ***(Optional)*** For the pre-trained model, please download using the link below and paste it in the `models` folder (your directory should be ***models/enhanced_model_1.pth***). Link: https://bit.ly/SIC_models
-3. Run `Training.py`.
-4. Check models folder to see if `enhanced_model_1.pth` available or not.
-5. Run `Testing_Class.py` to check if the program classifies garbage in the correct class (Using images / videos in external folder).
-6. Run `Execute_Images.py` to identify and classify garbage in images (Using images / videos in external folder).
-7. Run `Execute_Videos.py` to identify and classify garbage in videos or real-time webcam (Using images / videos in external folder).
+## INSTRUCTION (FOR LOCAL USAGES)
+1. Due to Github limitation, please download all the classes folders with the link below, then unzip, copy and paste it into the `all_classes` folder (your directory should be ***all_classes/classes - Ex: all_classes/battery***). Link: 
+2. Run `Training.py`.
+3. Check models folder to see if `ResnetModel.pth` or 'SwinTransformerModel.pth' available or not -> Then continue to step 5
+# If you train your model using Kaggle, please continue from here:
+4. Copy your downloaded model in to the 'models' folders
+6. Run `Testing_Class.py` to check if the program classifies garbage in the correct class (Using images / videos in external folder).
+7. Run `Execute_Images.py` to identify and classify garbage in images (Using images / videos in external folder).
+8. Run `Execute_Videos.py` to identify and classify garbage in videos or real-time webcam (Using images / videos in external folder).
 ## RESULT
 ### Images
 ![Screenshot 2024-07-17 093230](https://github.com/user-attachments/assets/e702785d-3a18-4050-9b86-00753e3a0e30)
