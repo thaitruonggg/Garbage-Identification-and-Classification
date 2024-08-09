@@ -1,6 +1,7 @@
 # Garbage Identification and Classification
-Resnet50: https://www.kaggle.com/code/naofunyannn/sic-resnet50
-Swin Transformer:https://www.kaggle.com/code/naofunyannn/sic-swintransformer
+## LINK FOR KAGGLE NOTEBOOK TO TRAIN MODELS:
+- Resnet50: https://www.kaggle.com/code/naofunyannn/sic-resnet50
+- Swin Transformer:https://www.kaggle.com/code/naofunyannn/sic-swintransformer
 ## INSTRUCTION
 1. Due to Github limitation, please download all the classes folders with the link below, then unzip, copy and paste it into the `all_classes` folder (your directory should be ***all_classes/classes - Ex: all_classes/battery***). Link: [https://bit.ly/SIC_all_classes](https://drive.google.com/drive/folders/1JNd50twyUlAJ8ly5LB3KxLqxGk2-FROn?usp=drive_link)
 2. ***(Optional)*** For the pre-trained model, please download using the link below and paste it in the `models` folder (your directory should be ***models/enhanced_model_1.pth***). Link: https://bit.ly/SIC_models
