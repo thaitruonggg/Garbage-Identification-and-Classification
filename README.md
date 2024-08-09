@@ -2,6 +2,11 @@
 ## LINK FOR KAGGLE NOTEBOOK TO TRAIN MODELS:
 - ResNet50: https://www.kaggle.com/code/naofunyannn/sic-resnet50
 - Swin Transformer:https://www.kaggle.com/code/naofunyannn/sic-swintransformer
+## PYTHON PACKAGES REQUIREMENT:
+- PyTorch (CUDA version is recommended)
+- Matplot
+- Numpy
+- OpenCV
 ## INSTRUCTION
 ### If you train on your device, please start from here:
 1. Due to Github limitation, please download all the classes folders with the link below, then unzip, copy and paste it into the `all_classes` folder (your directory should be ***all_classes/classes - Ex: all_classes/battery***). Link: 
